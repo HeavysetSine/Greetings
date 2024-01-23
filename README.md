@@ -20,7 +20,6 @@ Aqui te proporciono un ejemplo de como imprementar y usar el paquete en tu codig
 package main
 import (
 	"fmt"
-	"log"
 	"github.com/HeavysetSine/greetings"
 )
 
@@ -29,7 +28,7 @@ func main() {
 	mensaje, error := greetings.Hello("Jaime")
 
 	if error != nil {
-		log.Fatal("Ocurrio un error",error) ///Imprimiremos el error
+		fmt.Println("Ocurrio un error",error) ///Imprimiremos el error
         return
 	}
 	fmt.Println(mensaje) //evidenciamos el mensaje
